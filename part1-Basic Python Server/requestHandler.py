@@ -10,8 +10,12 @@ class myHandler(BaseHTTPRequestHandler):
 		
 		# You will need to change this if you are sending something
   		# other than plain text, like JSON or HTML.
+			#this line
+		self.send_response(200)
 		self.send_header('Content-type','text/html')
 		self.end_headers()
+		# this line
+		self.wfile.write("Hello Alex !")
 
 		# Send the "Hello World" message here 
 		
