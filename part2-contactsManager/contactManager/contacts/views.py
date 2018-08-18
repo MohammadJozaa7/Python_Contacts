@@ -6,4 +6,5 @@ from django.http import HttpResponse
 from .models import Contact
 
 # Create your views here.
+
 #your code is here 
